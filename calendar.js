@@ -118,11 +118,6 @@ function createCalendarCard(year, month, currentUserLogin) {
         marksContainer.className = 'marks-container';
         dayCell.appendChild(marksContainer);
 
-        var hint = document.createElement('span');
-        hint.className = 'toggle-mark-hint';
-        hint.textContent = '✓';
-        dayCell.appendChild(hint);
-
         (function(cell, dStr) {
             cell.addEventListener('click', function(e) {
                 e.stopPropagation();
